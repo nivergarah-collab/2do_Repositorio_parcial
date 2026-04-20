@@ -40,18 +40,28 @@ class users:
        else:
           comparePasswordMessage = "Unespected error in comparison"
           return comparePasswordMessage
-    
-    def addUser(self, newUser, newpassword):
-        try:
-         newAddition = {"user": newUser, 
-                       "password": newpassword}
-         self.usersDb.append(newAddition)
-         addUserMessage = "User added"
-         return addUserMessage
-        except:
-           addUserMessage = "Unespected error adding user"
-           return addUserMessage
-        
+
+
+    def addUserV2(self):
+       try:
+             newUser = input("Ingrese un nombre\n")
+             en_bucle = True
+             while en_bucle == True:
+              message, userIndex = self.getUser(newUser)
+              if "Usuario encontrado" == message:
+                newUser = input("Nombre ya opcupado\nIngrese Otro\n")
+              else:
+                 en_bucle = False
+                
+             newPassword = input("Ingrese una contraseña\n")
+             newAddition = {"user": newUser, 
+                            "password": newPassword}
+             self.usersDb.append(newAddition)
+             addUserMessage = "User added"
+             return addUserMessage
+       except:
+          addUserMessage = "Unespected error adding user"
+          return addUserMessage
 
 
 # EN DESARROLLO
@@ -73,3 +83,16 @@ class users:
              return deleteUserMessage
 
 
+    """
+    def addUser(self, newUser, newpassword):
+        try:
+         newAddition = {"user": newUser, 
+                       "password": newpassword}
+         self.usersDb.append(newAddition)
+         addUserMessage = "User added"
+         return addUserMessage
+        except:
+           addUserMessage = "Unespected error adding user"
+           return addUserMessage
+        """
+    
