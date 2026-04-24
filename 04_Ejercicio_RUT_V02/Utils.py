@@ -47,7 +47,7 @@ def Validacion_numerica(rango, eleccion):
         try:
             if int(eleccion)-1  in range(rango): 
                 eleccion = int(eleccion)
-                return eleccion + 1
+                return eleccion 
             else:
                 eleccion = input("Ingrese un valor valido\n")
         except ValueError:

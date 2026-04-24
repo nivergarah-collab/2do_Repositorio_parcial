@@ -7,10 +7,9 @@ DB = U_Man.users()
 
 print(a.Bienvenida)
 eleccion01 = input(a.Menu01)
-U.Validacion_numerica(2, eleccion01)
-print(type(eleccion01))
+eleccion01 = U.Validacion_numerica(2, eleccion01)
 
-if int(eleccion01) == 1:
+if eleccion01 == 1:
     #Ingreso Rut
     rut = input("Ingrese su rut\n")
     findedUser, index= DB.getUser(rut)
