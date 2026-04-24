@@ -45,12 +45,13 @@ def Validacion_numerica(rango, eleccion):
     en_bucle = True
     while en_bucle:
         try:
-            if eleccion in range(rango + 1):
-                return eleccion
+            if int(eleccion)-1  in range(rango): 
+                eleccion = int(eleccion)
+                return eleccion + 1
             else:
-                eleccion = int(input("Ingrese un valor valido\n"))
+                eleccion = input("Ingrese un valor valido\n")
         except ValueError:
-            eleccion = int(input("Ingrese un valor valido\n"))
+            eleccion = input("Ingrese un valor valido\n")
 
 
 # Password

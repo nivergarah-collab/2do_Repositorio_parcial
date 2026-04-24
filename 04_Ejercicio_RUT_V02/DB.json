@@ -1,0 +1,42 @@
+[
+    {
+        "rut": "17786044-1",
+        "name": "pedro",
+        "password": "0123456789"
+    },
+    {
+        "rut": "16887941-5",
+        "name": "pedro",
+        "password": "0123456789"
+    },
+    {
+        "rut": "6667346-4",
+        "name": "pedro",
+        "password": "0123456789"
+    },
+    {
+        "rut": "12870631-3",
+        "name": "pedro",
+        "password": "0123456789"
+    },
+    {
+        "rut": "15518258-k",
+        "name": "pedro",
+        "password": "0123456789"
+    },
+    {
+        "rut": "21115084-k",
+        "name": "pedro",
+        "password": "0123456789"
+    },
+    {
+        "rut": "22333444-5",
+        "name": "maria",
+        "password": "superpassword"
+    },
+    {
+        "rut": "19874745-9",
+        "name": "No solucionado",
+        "password": 123456788
+    }
+]
