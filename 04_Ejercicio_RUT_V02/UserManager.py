@@ -5,7 +5,7 @@ class users:
       self.path = "04_Ejercicio_RUT_V02/DB.json"
       with open(self.path, "r") as userDb:
        self.usuarios = json.load(userDb)
-       print(self.usuarios)
+       # print(self.usuarios)
 
     def getUser(self, username):
         #print(username)

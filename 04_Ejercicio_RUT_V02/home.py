@@ -8,7 +8,7 @@ DB = U_Man.users()
 print(a.Bienvenida)
 eleccion01 = input(a.Menu01)
 eleccion01 = U.Validacion_numerica(2, eleccion01)
-
+# ingreso cliente
 if eleccion01 == 1:
     #Ingreso Rut
     rut = input("Ingrese su rut\n")
@@ -30,6 +30,7 @@ if eleccion01 == 1:
         print("Contraseña incorrecta, saliendo de sistema")
     else: 
         print("Bienvenido, Registro exitoso")
+# ingreso nuevo usuario
 else: 
     en_bucle_rut = True
     while en_bucle_rut:
@@ -79,26 +80,3 @@ else:
     
     
 
-    
-
-
-
-    #Ingreso contraseña
-
-
-    
-
-
-
-
-
-
-"""
-usuarioEncontrado = DB.getUser("17786044-1")
-comparePassword  = DB.comparePassword("17786044-1","0123456789")
-addUsser = DB.addUserV2()
-
-print(usuarioEncontrado)
-print(comparePassword)
-
-"""
