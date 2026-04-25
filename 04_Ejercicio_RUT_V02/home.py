@@ -56,7 +56,7 @@ else:
     while en_bucle_password:
      password = input("Ingrese password\n")
      if len(password) != 10:
-        print("Su password debbe ser exatamente de 10 numeros\n")
+        print("Su password debe ser exatamente de 10 numeros\n")
      else:
         try:
             password = int(password)
