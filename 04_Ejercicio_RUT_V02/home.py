@@ -13,11 +13,10 @@ if eleccion01 == 1:
     #Ingreso Rut
     rut = input("Ingrese su rut\n")
     findedUser, index= DB.getUser(rut)
-    print(findedUser)
     while findedUser != "Usuario encontrado":
         print("Usuario no registrado")
         rut = input("Intente Nuevamente\n")
-        findedUser=DB.getUser(rut)
+        findedUser, index=DB.getUser(rut)
     
     password = input("Ingrese su password\n")
     validatedPassword = DB.comparePassword(rut, password)
